@@ -5,13 +5,18 @@
     <meta name='viewport'
     content='width=device-width, initial-scale=1.0'>
     <title>FEC Proxy Server</title>
-    <link rel='stylesheet' href='style.css'>
+    <!-- <link rel='stylesheet' href='style.css'> -->
   </head>
-  <body>
-    <div id='ImageCarouselService'></div>
-    <div id='ProductInfoService'></div>
-    <div id='RelatedProductsService'></div>
-    <div id='ReviewsService'></div>
+  <body style='display: grid; grid-template-columns: 700px 700px; grid-template-rows: 1000px 350px 1fr'>
+    <div id='ImageCarouselService' style='grid-row: 1/1; grid-column: 1/1;' ></div>
+    <div id="portal"></div>
+    <div id='ProductInfoService' style='grid-row: 1/1; grid-column: 2/3;'></div>
+    <hr></hr>
+    <div id='RelatedProductsService' style='grid-row: 2/3; grid-column: 1/3;'></div>
+    <hr></hr>
+    <div id='ReviewsService' style='grid-row: 3/4; grid-column: 1/3;' ></div>
+    <div id="reviewsPortal"></div>  
+
     <script src='bundles/service1.js'></script>
     <script src='bundles/service2.js'></script>
     <script src='bundles/service3.js'></script>
