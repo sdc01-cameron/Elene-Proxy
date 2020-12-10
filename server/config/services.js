@@ -52,8 +52,8 @@ module.exports = {
     bundle: 'bundle.js',
   },
   service3: { //dylan
-    api: '/relatedProducts/all',
-    url: 'http://54.218.104.146:3003/',
+    api: ['/relatedProducts/all', '/relatedProducts/newItem'],
+    url: 'http://localhost:3003/',
     bundle: 'bundle.js',
   },
   service4: { // joe
