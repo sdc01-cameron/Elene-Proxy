@@ -1,0 +1,17 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 60
+      arrivalRate: 60
+      name: Warm up
+
+scenarios:
+  - flow:
+
+    - loop:
+      - get:
+          url: "/api/relatedProducts/all"
+          body: '{
+              "productID": 3456002
+              }'
+      count: 1

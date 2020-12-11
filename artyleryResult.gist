@@ -1,0 +1,142 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 60
+      arrivalRate: 60
+      name: Warm up
+
+scenarios:
+  - flow:
+
+    - loop:
+      - get:
+          url: "/api/relatedProducts/all"
+          body: '{
+              "productID": 3456002
+              }'
+      count: 1
+Elenes-MacBook-Pro:Elene-Proxy elenemikaberidze$ artillery run proxyArtilery.yaml
+Started phase 0 (Warm up), duration: 60s @ 15:49:15(-0800) 2020-12-11
+Report @ 15:49:25(-0800) 2020-12-11
+Elapsed time: 10 seconds
+  Scenarios launched:  599
+  Scenarios completed: 599
+  Requests completed:  599
+  Mean response/sec: 60.69
+  Response time (msec):
+    min: 2.8
+    max: 438.6
+    median: 4.2
+    p95: 222.2
+    p99: 369.3
+  Codes:
+    200: 599
+
+Report @ 15:49:35(-0800) 2020-12-11
+Elapsed time: 20 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60.06
+  Response time (msec):
+    min: 2.7
+    max: 129.5
+    median: 3.7
+    p95: 25.3
+    p99: 72.1
+  Codes:
+    200: 600
+
+Report @ 15:49:45(-0800) 2020-12-11
+Elapsed time: 30 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60
+  Response time (msec):
+    min: 2.7
+    max: 22
+    median: 3.2
+    p95: 6.5
+    p99: 11.8
+  Codes:
+    200: 600
+
+Report @ 15:49:55(-0800) 2020-12-11
+Elapsed time: 40 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60
+  Response time (msec):
+    min: 2.7
+    max: 179.4
+    median: 3.4
+    p95: 74
+    p99: 136.3
+  Codes:
+    200: 600
+
+Report @ 15:50:05(-0800) 2020-12-11
+Elapsed time: 50 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60
+  Response time (msec):
+    min: 2.7
+    max: 189.7
+    median: 3.3
+    p95: 26.7
+    p99: 141.6
+  Codes:
+    200: 600
+
+Report @ 15:50:15(-0800) 2020-12-11
+Elapsed time: 1 minute, 0 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60
+  Response time (msec):
+    min: 2.7
+    max: 178.3
+    median: 3.3
+    p95: 24
+    p99: 134.3
+  Codes:
+    200: 600
+
+Report @ 15:50:16(-0800) 2020-12-11
+Elapsed time: 1 minute, 0 seconds
+  Scenarios launched:  1
+  Scenarios completed: 1
+  Requests completed:  1
+  Mean response/sec: 2
+  Response time (msec):
+    min: 7.3
+    max: 7.3
+    median: 7.3
+    p95: 7.3
+    p99: 7.3
+  Codes:
+    200: 1
+
+All virtual users finished
+Summary report @ 15:50:16(-0800) 2020-12-11
+  Scenarios launched:  3600
+  Scenarios completed: 3600
+  Requests completed:  3600
+  Mean response/sec: 59.6
+  Response time (msec):
+    min: 2.7
+    max: 438.6
+    median: 3.5
+    p95: 46.8
+    p99: 213.6
+  Scenario counts:
+    0: 3600 (100%)
+  Codes:
+    200: 3600
+
+Elenes-MacBook-Pro:Elene-Proxy elenemikaberidze$
