@@ -41,24 +41,25 @@
 */
 
 module.exports = {
-  service1: { // zain
-    api: '/product/:id',
-    url: 'http://34.:3001/',
-    bundle: 'bundle.js',
-  },
-  service2: { // deb
-    api: '/products/:id',
-    url: 'http://3.:3002/',
-    bundle: 'bundle.js',
-  },
+  // service1: { // zain
+  //   api: '/product/:id',
+  //   url: 'http://34.:3001/',
+  //   bundle: 'bundle.js',
+  // },
+  // service2: { // deb
+  //   api: '/products/:id',
+  //   url: 'http://3.:3002/',
+  //   bundle: 'bundle.js',
+  // },
   service3: { //dylan
     api: ['/relatedProducts/all', '/relatedProducts/newItem'],
-    url: 'http://localhost:3003/',
+    url: 'http://18.224.136.97:3003',
     bundle: 'bundle.js',
-  },
-  service4: { // joe
-    api: '/reviews/:id',
-    url: 'http://3.89:3004/',
-    bundle: 'bundle.js',
-  },
+  }
+  //,
+  // service4: { // joe
+  //   api: '/reviews/:id',
+  //   url: 'http://3.89:3004/',
+  //   bundle: 'bundle.js',
+  // },
 };

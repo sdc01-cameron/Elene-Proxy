@@ -1,0 +1,1 @@
+ssh -i "/Users/elenemikaberidze/Desktop/HackReactor/SDC/Elene-Proxy/ProxyLog.pem" ubuntu@ec2-18-224-179-134.us-east-2.compute.amazonaws.com
